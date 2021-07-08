@@ -1,0 +1,82 @@
+{
+  "name": "vue-project",
+  "version": "5.73.0",
+  "private": true,
+  "scripts": {
+    "dev": "export NODE_ENV=dev; vue-cli-service serve",
+    "build": "vue-cli-service build && gulp build",
+    "lint": "vue-cli-service lint",
+    "fix": "eslint --fix --ext .js,.vue src"
+  },
+  "dependencies": {
+    "@hb/ckbusiness": "^1.0.5",
+    "@hb/crow": "0.0.1",
+    "@hb/elf": "^2.0.0",
+    "@hb/tianqi": "^6.1.0",
+    "@hb/ubt-js": "^4.0.0-alpha.0",
+    "axios": "^0.17.0",
+    "better-scroll": "^1.15.2",
+    "clipboard": "^2.0.6",
+    "coordtransform": "^2.1.2",
+    "decimal.js": "^10.2.0",
+    "fastclick": "^1.0.6",
+    "html5-image-compress": "^0.1.3",
+    "husky": "^4.3.8",
+    "js-cookie": "^2.2.1",
+    "mint-ui": "^2.2.13",
+    "scriptjs": "^2.5.9",
+    "ua-device": "^0.1.10",
+    "uuid": "^7.0.3",
+    "vue": "^2.5.17",
+    "vue-router": "^3.0.1",
+    "vue-touch": "^2.0.0-beta.4"
+  },
+  "devDependencies": {
+    "@hb/codestyle-linter": "^3.7.4",
+    "@vue/cli-plugin-babel": "^3.0.1",
+    "@vue/cli-service": "^3.0.1",
+    "ali-oss": "^6.0.1",
+    "babel-plugin-component": "^1.1.1",
+    "dev-hook-utils": "^4.8.2",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-vue": "^6.2.2",
+    "gulp": "^3.9.1",
+    "gulp-zip": "^4.2.0",
+    "less": "^3.11.1",
+    "less-loader": "^5.0.0",
+    "node-sass": "^4.14.1",
+    "pug": "^2.0.3",
+    "pug-plain-loader": "^1.0.0",
+    "sass-loader": "^7.1.0",
+    "stylelint": "^13.7.0",
+    "vue-template-compiler": "^2.5.17"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "rules": {},
+    "parserOptions": {
+      "parser": "babel-eslint"
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "cdn-bucket": "easybike-cdn",
+  "cdn-directory": "vue-project",
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
+}
